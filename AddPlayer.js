@@ -57,6 +57,7 @@ class PlayerClass
         if(this.points>50)
         {
             this.points = 25;
+            console.log(this.points);
         }
     }
 }
