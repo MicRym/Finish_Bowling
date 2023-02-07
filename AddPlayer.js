@@ -28,6 +28,10 @@ class PlayerClass
         this.points=0;
         this.bPointCountStarted =false;
         this.bPointFromOneFigure =false;
+        if(this.score > 50)
+        {
+            this.score = 25;
+        }
     }
     setIdNumber( idNumber)
     {
@@ -53,11 +57,6 @@ class PlayerClass
         else
         {
             this.points++;
-        }
-        if(this.points > 50)
-        {
-            this.points = 25;
-            console.log(this.points);
         }
     }
 }
