@@ -72,7 +72,7 @@ function setButtonClick( ID, Player)
         $(button).click(function(){
             Player.addPoints(Number(this.innerHTML));
             $(this).css("background-color", "rgb(230, 130, 135)");
-            $(this).disabled = true;
+            $(this).prop('disabled', true);
             
         })
     });
@@ -89,7 +89,7 @@ function setApplyScoreClick( ID, Player)
             Player.addScore();
             ScoreText.innerHTML = Player.score;
             $(buttonToChange).css("background-color", "rgb(227, 231, 168)");
-            $(buttonToChange).disabled = true;
+            $(buttonToChange).prop('disabled', false);
 
         })
     });
