@@ -93,6 +93,22 @@ function setApplyScoreClick( ID, Player)
         })
     });
 }
+function setResetPointsClick( ID, Player)
+{
+    $(ID).ready(function(){
+        var ScoreText = document.getElementById(ID).querySelector(".Player_Score");
+        var button = document.getElementById(ID).querySelectorAll('.button_type4');
+        var buttonToChange = document.getElementById(ID).querySelectorAll('.button_type1');
+        console.log(button);
+        $(button).off("click");
+        $(button).click(function(){
+            Player.points = 0;
+            $(buttonToChange).css("background-color", "rgb(227, 231, 168)");
+            $(buttonToChange).prop('disabled', false);
+
+        })
+    });
+}
 
 function clonePlayerContent( iCloneIndex, Players )
 {
@@ -111,6 +127,7 @@ function clonePlayerContent( iCloneIndex, Players )
 
         setButtonClick(ClonedPlayerContnent.id, Players[iCloneIndex]);
         setApplyScoreClick(ClonedPlayerContnent.id, Players[iCloneIndex]);
+        setResetPointsClick(ClonedPlayerContnent.id, Players[iCloneIndex]);
     } 
 }
 window.onload = function(){
@@ -120,5 +137,6 @@ window.onload = function(){
     Players = [Player];
     setButtonClick(PlayerContent.id, Players[iCloneIndex]);
     setApplyScoreClick(PlayerContent.id, Players[iCloneIndex]);
+    setResetPointsClick(PlayerContent.id, Players[iCloneIndex]);
     clonePlayerContent( iCloneIndex, Players);
 }
