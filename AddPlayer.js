@@ -54,6 +54,10 @@ class PlayerClass
         {
             this.points++;
         }
+        if(this.points>50)
+        {
+            this.points = 25;
+        }
     }
 }
 
@@ -67,6 +71,7 @@ function setButtonClick( ID, Player)
         $(button).click(function(){
             Player.addPoints(Number(this.innerHTML));
             $(this).css("background-color", "rgb(230, 130, 135)");
+            $(this).disabled = true;
             
         })
     });
@@ -83,6 +88,7 @@ function setApplyScoreClick( ID, Player)
             Player.addScore();
             ScoreText.innerHTML = Player.score;
             $(buttonToChange).css("background-color", "rgb(227, 231, 168)");
+            $(buttonToChange).disabled = true;
 
         })
     });
