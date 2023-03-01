@@ -63,25 +63,90 @@ footer {
 	padding: 60px 0;
 }
 .button_type1{
-	padding: 36px 10;
-	width: 10 em;
+	width: 100%;
 	color:rgb(0, 2, 2);
-	background-color: rgb(227, 231, 168);
+	background-color: aquamarine;
+	border:medium;
+	border-color: azure;
 	font-size:large;
 }
 .button_type2{
-	padding: 36px 10;
-	width: 10 em;
+	width: 100%;
 	color:rgb(0, 2, 2);
-	background-color: rgb(230, 130, 135);
+	background-color:cyan;
 	font-size:large;
+	border:thin;
 }
-.Player_Control{
-width: fit-content;
+.Player_Contnet
+{
+	width: auto;
+	height: auto;
+	align-content: center;
+}
+.PlayersContainer
+{
+
+	width: auto;
+	height: auto;
+	padding-bottom: 50px;
+	text-align: center;
+}
+.Player_Control
+{
+	padding-top: 25px;
+	width: auto;
+	align-content: center;
 }
 .Player_Score{
+	Pading-top:10px;
 	font-size: x-large;
 }
 .button_type3{
 	font-size: x-large;
+	background: #0D5322;
+	color:white;
+	margin-left: auto;
+	max-resolution: auto;
+	border:thin;
+	
+}
+table
+{
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.Add_Player_Content
+{
+	margin-left: auto;
+	margin-right: auto;
+	align-content: center;
+	text-align: center;
+}
+.button_cell
+{
+	width: 25%;
+	padding: 1%;
+}
+.button_cell_actions
+{
+	width: 50%;
+	padding: 1%;
+}
+.button_type4
+{
+	width: 100%;
+	color:rgb(0, 2, 2);
+	background-color:cadetblue;
+	border: thin;
+	font-size:large;
+}
+.Actions_table
+{
+	width: 25%;
+}
+.Player_Name
+{
+	padding-top:25px; 
 }

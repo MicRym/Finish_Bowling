@@ -11,29 +11,46 @@
 	<script src="AddPlayer.js"></script>
 </head>
 <body>
-    <div id="PlayersContainer">
+    <div id="PlayersContainer" class="PlayersContainer">
         <div class = "Player_Contnet" id="Player_Content_0">
-            <div class = "Player Name">
-                <input type="text" id="PlayerNameEdit" name="PlayerNameEdit">
+            <div class = "Player_Name">
+                <input type="text" class="PlayerNameEdit" name="PlayerNameEdit">
             </div>
             <div class = "Player_Score">
                 0
             </div>
             <div class = "Player_Control">
-                <button type="button" id="PlayerButton1" class="button_type1">1</button>
-                <button type="button" id="PlayerButton2" class="button_type1">2</button>
-                <button type="button" id="PlayerButton3"  class="button_type1">3</button>
-                <button type="button" id="PlayerButton4"  class="button_type1">4</button>
-                <button type="button" id="PlayerButton5"  class="button_type1">5</button>
-                <button type="button" id="PlayerButton6"  class="button_type1">6</button>
-                <button type="button" id="PlayerButton7" class="button_type1">7</button>
-                <button type="button" id="PlayerButton8"  class="button_type1">8</button>
-                <button type="button" id="PlayerButton9"  class="button_type1">9</button>
-                <button type="button" id="PlayerButton10"  class="button_type1">10</button>
-                <button type="button" id="PlayerButton11"  class="button_type1">11</button>
-                <button type="button" id="PlayerButton12" class="button_type1">12</button>
-                <button type="button" id="PlayerButtonSubmit" class="button_type2">Zatwierdź wynik</button>
-		<button type="button" id="PlayerButtonReset" class="button_type4">Reset punktów</button>
+
+				<table border="0">
+					<tbody>
+						  <tr>
+							<td class= "button_cell"><button type="button" id="PlayerButton1" class="button_type1">1</button></td>
+							<td class= "button_cell"><button type="button" id="PlayerButton2" class="button_type1">2</button></td>
+							<td class= "button_cell"><button type="button" id="PlayerButton3"  class="button_type1">3</button></td>
+							<td class= "button_cell"><button type="button" id="PlayerButton4"  class="button_type1">4</button></td>
+						  </tr>
+						  <tr>
+							<td class= "button_cell"> <button type="button" id="PlayerButton5"  class="button_type1">5</button></td>
+							<td class= "button_cell"><button type="button" id="PlayerButton6"  class="button_type1">6</button></td>
+							<td class= "button_cell"><button type="button" id="PlayerButton7" class="button_type1">7</button></td>
+							<td class= "button_cell"><button type="button" id="PlayerButton8"  class="button_type1">8</button></td>
+						  </tr>
+						  <tr>
+							<td class= "button_cell"><button type="button" id="PlayerButton9"  class="button_type1">9</button></td>
+							<td class= "button_cell"><button type="button" id="PlayerButton10"  class="button_type1">10</button></td>
+							<td class= "button_cell"><button type="button" id="PlayerButton11"  class="button_type1">11</button></td>
+							<td class= "button_cell"><button type="button" id="PlayerButton12" class="button_type1">12</button></td>
+						  </tr>
+					</tbody>
+				 </table>
+				 <table class= "Actions_table" border="0">
+				  <tbody>
+					<tr>
+					  <td class="button_cell_actions"><button type="button" id="PlayerButtonSubmit" class="button_type2">Zatwierdź wynik</button></td>
+					  <td class="button_cell_actions"><button type="button" id="PlayerButtonReset" class="button_type4">Reset punktów</button></td>
+					</tr>
+				  </tbody>
+				</table>
             </div>
         </div>
     </div>
